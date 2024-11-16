@@ -1,0 +1,65 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f7ef; /* Light green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    padding-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 128, 0, 0.2); /* Light green shadow */
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    color: #28a745; /* Darker green for headers */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb; /* Light green border */
+    border-radius: 5px;
+    background-color: #f1f9f3; /* Very light green background */
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding does not affect element width */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #28a745; /* Darker green on focus */
+}
+
+button {
+    background-color: #28a745; /* Green button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+p {
+    font-size: 14px;
+    color: #6c757d; /* Subtle text color for additional info */
+}
