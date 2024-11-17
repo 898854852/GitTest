@@ -7,22 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwordInput = document.querySelector('input[name="password"]');
     const togglePassword = document.createElement('span');
     
-    // Create a toggle password button
-    togglePassword.innerText = 'Show';
-    togglePassword.style.cursor = 'pointer';
-    togglePassword.style.marginLeft = '8px';
-    passwordInput.parentNode.insertBefore(togglePassword, passwordInput.nextSibling);
-
-    // Toggle password visibility
-    togglePassword.addEventListener('click', () => {
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-            togglePassword.innerText = 'Hide';
-        } else {
-            passwordInput.type = 'password';
-            togglePassword.innerText = 'Show';
-        }
-    });
+   // JavaScript to toggle password visibility
+   document.getElementById('show-password').addEventListener('change', function() {
+    const passwordField = document.getElementById('password');
+    if (this.checked) {
+        passwordField.type = 'text';  // Show password
+    } else {
+        passwordField.type = 'password';  // Hide password
+    }
+});
 
     // Basic form validation
     loginForm.addEventListener('submit', (event) => {
