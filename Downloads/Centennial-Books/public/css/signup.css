@@ -27,6 +27,7 @@ h2 {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     display: block;
     width: calc(100% - 24px);
@@ -74,23 +75,6 @@ p a {
 
 p a:hover {
     text-decoration: underline;
-}
-
-.show-password {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.show-password input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.show-password label {
-    font-size: 14px;
-    color: #555;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
