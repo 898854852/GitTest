@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #494D5F; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #28a745; 
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb; 
+    border-radius: 5px;
+    background-color: #f1f9f3; 
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #28a745; 
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #28a745; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838; 
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+p a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.show-password input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.show-password label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
